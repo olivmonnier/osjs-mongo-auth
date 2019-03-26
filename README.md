@@ -18,7 +18,7 @@ Please see the [OS.js Authentication Guide](https://manual.os-js.org/v3/guide/au
 Install the required OS.js module and database driver:
 
 ```bash
-npm install --save --production @osjs/osjs-mongo-auth
+npm install --save --production osjs-mongo-auth
 ```
 
 ### Configure Server
@@ -29,7 +29,7 @@ In your **`src/server/index.js`** file:
 
 ```javascript
 // In the top of the file load the library
-const dbAuth = require('@osjs/osjs-mongo-auth');
+const dbAuth = require('osjs-mongo-auth');
 
 // Locate this line in the file and add the following:
 osjs.register(AuthServiceProvider, {
@@ -77,7 +77,7 @@ In your **`src/cli/index.js`** file:
 
 ```javascript
 // In the top of the file load the library
-const dbAuth = require('@osjs/osjs-mongo-auth');
+const dbAuth = require('osjs-mongo-auth');
 
 // Create a database authentication instance
 const dbCli = dbAuth.cli({
