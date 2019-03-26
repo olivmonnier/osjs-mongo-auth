@@ -1,6 +1,6 @@
 {
   "name": "osjs-mongo-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OS.js v3 Mongo authentication provider adapter",
   "main": "index.js",
   "repository": {
